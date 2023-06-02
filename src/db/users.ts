@@ -1,6 +1,13 @@
+/* nodemon used to update automatically on changes made*/
+
 // creating user models
+// Object Data Modeling (ODM) library for Node.js
+// interface to interact with MongoDB 
 import mongoose from "mongoose";
 
+// define types, fields and validation rules 
+// structure and validation requirements for a user document
+//  mongoose.Schema constructor
 const UserSchema = new mongoose.Schema({
     username: {type: String, required: true},
     email: {type: String, required: true},
